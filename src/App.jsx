@@ -5,10 +5,13 @@ import Signup from '../src/pages/Signup'
 import Home from '../src/pages/Home'
 import Profile from '../src/pages/Profile'
 import About from '../src/pages/About'
+import Header from './components/Header'
 function App() {
   return (
    <BrowserRouter>
+    <Header/>
    <Routes>
+   
     <Route path="/" element={<Home/>}/>
     <Route path="/sign-in" element={<SignIn/>}/>
     <Route path="/sign-up" element={<Signup/>}/>
